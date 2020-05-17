@@ -9,6 +9,10 @@ Setup your GitHub Actions workflow with Buildozer.
 ```yaml
 - name: Use oxr463/setup-buildozer
   uses: oxr463/setup-buildozer@0.1.0
+  with:
+    exec: |
+      buildozer android update && \
+      buildozer android debug
 ```
 
 ## License
