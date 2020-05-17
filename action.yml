@@ -1,0 +1,16 @@
+name: "Setup Buildozer"
+description: "Setup your GitHub Actions workflow with Buildozer."
+inputs:
+  exec:
+    description: "Buildozer command to execute"
+    required: true
+author: "oxr463"
+branding:
+  color: black
+  icon: smartphone
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.exec }}
