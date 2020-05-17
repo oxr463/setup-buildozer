@@ -15,4 +15,7 @@ jobs:
       uses: ./
       with:
         exec: |
-          echo "TODO"
+          cd test && \
+          buildozer android update && \
+          buildozer android debug
+
